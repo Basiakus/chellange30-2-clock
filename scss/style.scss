@@ -118,15 +118,16 @@
          transition: all .4s; 
          transform: rotate(290deg) translateY(-50%);
          transition-timing-function: cubic-bezier(0,1.91,.67,.28);
-         #second-hand-head {
-            position: absolute;
-            min-width: 30px;
-            min-height: 30px;
-            transform: translateY(-45%);
-            background-color: red;
-            border-radius: 50%;
-            left: 68.5%;
-         }
       }
+      #second-hand-head {
+            position: absolute;
+            min-width: 6%;
+            min-height: 6%;
+            background-color: red;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+         }
    }
 }
