@@ -1,0 +1,110 @@
+/* {
+   border: 1px red dashed;
+}*/
+#clock-center-position {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #clock-center-position #clock-size {
+    width: 50%;
+    padding-top: 50%;
+    border: 10px black solid;
+    position: relative;
+    border-radius: 50%; }
+    #clock-center-position #clock-size [id*='area-of-hournumber'] {
+      width: 50%;
+      height: 20%;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50);
+      display: flex;
+      align-items: center; }
+      #clock-center-position #clock-size [id*='area-of-hournumber'] p {
+        font-size: 2em;
+        transform: rotate(-90deg) translateY(50%); }
+      #clock-center-position #clock-size [id*='area-of-hournumber'] #accent-mark {
+        width: 10px;
+        height: 3px;
+        margin-left: 2%;
+        background-color: black; }
+    #clock-center-position #clock-size #area-of-hournumber-1 {
+      transform: rotate(-240deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-2 {
+      transform: rotate(-210deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-3 {
+      transform: rotate(-180deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-4 {
+      transform: rotate(-150deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-5 {
+      transform: rotate(-120deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-6 {
+      transform: rotate(-90deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-7 {
+      transform: rotate(-60deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-8 {
+      transform: rotate(-30deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-10 {
+      transform: rotate(30deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-11 {
+      transform: rotate(60deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-12 {
+      transform: rotate(90deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #hour-hand, #clock-center-position #clock-size #second-hand, #clock-center-position #clock-size #minute-hand {
+      position: absolute;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      box-sizing: border-box; }
+    #clock-center-position #clock-size #hour-hand {
+      width: 35%;
+      top: 50%;
+      left: 20%;
+      height: 10%;
+      background-color: black;
+      transform-origin: 85% 0%;
+      transform: rotate(290deg) translateY(-50%);
+      transition: all 5s; }
+    #clock-center-position #clock-size #minute-hand {
+      width: 55%;
+      left: 5%;
+      top: 50%;
+      height: 4%;
+      background-color: white;
+      border: 2px solid black;
+      transform-origin: 82% 0%;
+      transform: rotate(290deg) translateY(-50%);
+      transition: all 5s; }
+    #clock-center-position #clock-size #second-hand {
+      width: 65%;
+      left: 3%;
+      top: 50%;
+      height: 1.1%;
+      background-color: red;
+      transform-origin: 72.5% 0%;
+      transition: all .4s;
+      transform: rotate(290deg) translateY(-50%);
+      transition-timing-function: cubic-bezier(0, 1.91, 0.67, 0.28); }
+      #clock-center-position #clock-size #second-hand #second-hand-head {
+        position: absolute;
+        min-width: 30px;
+        min-height: 30px;
+        transform: translateY(-45%);
+        background-color: red;
+        border-radius: 50%;
+        left: 68.5%; }
+
+/*# sourceMappingURL=style.css.map */
