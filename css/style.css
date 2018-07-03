@@ -108,4 +108,8 @@
       left: 50%;
       top: 50%; }
 
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+  #clock-center-position #clock-size [id*='area-of-hournumber'] p {
+    font-size: 1.2em; } }
+
 /*# sourceMappingURL=style.css.map */
