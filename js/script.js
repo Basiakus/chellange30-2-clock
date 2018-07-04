@@ -11,10 +11,12 @@ setInterval(function() {
    const secondsDeg = seconds * 360 / 60;
    const minutesDeg = minutes * 360 / 60;
    const hoursDeg = (hours * 360 / 12);
-   console.log(minutesDeg);
+   const angularBetweenHours = (minutes * 30) / 60; //The angular value between an hours
+   const angularBetweenMinutes = (seconds * 6) / 60; //The angular value between an minutes
+   console.log(secondsDeg);
    secondHand.style.transform = `rotate(${secondsDeg + 90}deg) translateY(-50%)`;
-   minuteHand.style.transform = `rotate(${minutesDeg + 90}deg) translateY(-50%)`;
-   hourHand.style.transform = `rotate(${hoursDeg + 90}deg) translateY(-50%)`;
+   minuteHand.style.transform = `rotate(${minutesDeg + angularBetweenMinutes + 90}deg) translateY(-50%)`;
+   hourHand.style.transform = `rotate(${hoursDeg + angularBetweenHours + 90}deg) translateY(-50%)`;
 
    if(secondsDeg !== 0) {
       secondHand.style.transition = 'all .2s';
