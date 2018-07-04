@@ -95,7 +95,7 @@
          background-color: black;
          transform-origin: 85% 0%;
          transform: rotate(290deg) translateY(-50%);
-         transition: all 5s;
+         transition: all .4s;
       }
       #minute-hand {
          width: 55%;
@@ -106,7 +106,7 @@
          border: 2px solid black;
          transform-origin: 82% 0%;
          transform: rotate(290deg) translateY(-50%);
-         transition: all 5s;
+         transition: all .4s;
       }
       #second-hand {
          width: 65%;
