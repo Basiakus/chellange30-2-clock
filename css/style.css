@@ -14,15 +14,19 @@
     position: relative;
     border-radius: 50%; }
     #clock-center-position #clock-size [id*='area-of-hournumber'] {
+      box-sizing: border-box;
       width: 50%;
       height: 20%;
       position: absolute;
       top: 40%;
-      transform: translateY(-50);
+      transform: translateY(-50%);
       display: flex;
       align-items: center; }
       #clock-center-position #clock-size [id*='area-of-hournumber'] p {
+        text-align: center;
+        min-width: 20%;
         font-size: 2em;
+        margin-left: -8%;
         transform: rotate(-90deg) translateY(50%); }
       #clock-center-position #clock-size [id*='area-of-hournumber'] #accent-mark {
         width: 10px;
@@ -52,6 +56,9 @@
       transform-origin: 100% 50%; }
     #clock-center-position #clock-size #area-of-hournumber-8 {
       transform: rotate(-30deg);
+      transform-origin: 100% 50%; }
+    #clock-center-position #clock-size #area-of-hournumber-9 {
+      transform: rotate(0deg);
       transform-origin: 100% 50%; }
     #clock-center-position #clock-size #area-of-hournumber-10 {
       transform: rotate(30deg);

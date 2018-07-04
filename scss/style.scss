@@ -14,15 +14,19 @@
       position: relative;
       border-radius: 50%;
       [id*='area-of-hournumber'] {
+         box-sizing: border-box;
          width: 50%;
          height: 20%;
          position: absolute;
          top: 40%;
-         transform: translateY(-50);
+         transform: translateY(-50%);
          display: flex;
          align-items: center;
          p {
+            text-align: center;
+            min-width: 20%;
             font-size: 2em;
+            margin-left: -8%;
             transform: rotate(-90deg) translateY(50%);
          }
          #accent-mark {
@@ -65,7 +69,8 @@
          transform-origin: 100% 50%;
       }
       #area-of-hournumber-9{
-         
+         transform: rotate(0deg);
+         transform-origin: 100% 50%;
       }
       #area-of-hournumber-10{
          transform: rotate(30deg);
